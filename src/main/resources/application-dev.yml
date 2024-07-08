@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://localhost:5432/adore_db
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    username: c480de9009d784
+    password: 7192ef3b23a83b
+    port: 587
+  batch:
+    jdbc:
+      initialize-schema: always
+  cache:
+    redis:
+      time-to-live: 2h
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
+
+app:
+  base-path: 'C:\Users\user\IdeaProjects\Adore-Project\files'
+  admin:
+    password: 123
+  jwt:
+    expireDays: 7
+    secretKey: '03d2430e18744da8db2b8dbd64a64977be5c1a7f06d52197c9b8113a3b552c69'
